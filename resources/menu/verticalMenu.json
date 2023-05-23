@@ -1,0 +1,46 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Home",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "pages-Home"
+    },
+    {
+      "url": "/teams",
+      "name": "Equipos",
+      "icon": "menu-icon tf-icons bx bxs-trophy",
+      "slug": "pages-teams"
+    },
+    {
+      "url": "/players",
+      "name": "Jugadores",
+      "icon": "menu-icon tf-icons bx bx-football",
+      "slug": "pages-players"
+    },
+    {
+      "url": "/types",
+      "name": "tipos",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "pages-types"
+    },
+    {
+      "url": "/reports",
+      "name": "Reportes",
+      "icon": "menu-icon tf-icons bx bxs-report",
+      "slug": "pages-reports"
+    },
+    {
+      "url": "/backups",
+      "name": "Backups",
+      "icon": "menu-icon tf-icons bx bxs-file-archive",
+      "slug": "pages-backups"
+    },
+    {
+      "url": "/users",
+      "name": "Usuarios",
+      "icon": "menu-icon tf-icons bx bxs-group",
+      "slug": "pages-users"
+    }
+  ]
+}
