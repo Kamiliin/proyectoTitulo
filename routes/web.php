@@ -39,4 +39,15 @@ $controller_path = 'App\Http\Controllers';
     Route::get('/users/destroy/{user_id}', $controller_path . '\pages\Users@destroy')->name ('pages-users-destroy');
 
     
+
+
+    //API 
+
+    Route::get('/encuentros', [FootballController::class, 'getUpcomingMatches'])->name('encuentros');
+    Route::get('/principal', [FootballController::class, 'getChileanClubs'])->name('principal');
+    Route::get('/actualizar', [FootballController::class, 'updateDataFromAPI']);
+    Route::get('/estadios', [FootballController::class, 'getStadium'])->name('estadios');
+
+
+
 });
