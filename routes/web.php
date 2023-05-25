@@ -49,7 +49,6 @@ $controller_path = 'App\Http\Controllers';
     Route::get('/encuentros', [FootballController::class, 'getUpcomingMatches'])->name('encuentros');
     Route::get('/principal', [FootballController::class, 'getChileanClubs'])->name('principal');
     Route::get('/actualizar', [FootballController::class, 'updateDataFromAPI']);
-    Route::get('/estadios', [FootballController::class, 'getStadium'])->name('estadios');
 
 
 
