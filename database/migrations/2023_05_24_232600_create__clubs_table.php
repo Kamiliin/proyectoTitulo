@@ -11,18 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('stadia', function (Blueprint $table) {
+        // En la migración create_clubs_table
+        Schema::create('clubs', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('api_id')->unique();
-            $table->string('name_club');
-            $table->string('logo_club');
-            $table->integer('founded_club');
-            $table->string('country_club');
-            $table->string('stadium_name');
-            $table->string('stadium_address');
-            $table->string('stadium_city');
-            $table->integer('stadium_capacity');
-            $table->string('stadium_image');
+            $table->unsignedBigInteger('rank');
+            $table->string('name');
+            $table->string('logo');
+            $table->unsignedBigInteger('points');
+            $table->Integer('goals_diff');
+            $table->Integer('played');
+            $table->Integer('win');
+            $table->Integer('draw');
+            $table->Integer('lose');
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('stadia');
+        Schema::dropIfExists('clubs');
     }
 };
