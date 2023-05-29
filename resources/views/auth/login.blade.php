@@ -8,11 +8,19 @@ $customizerHidden = 'customizer-hide';
 @section('title', 'Login')
 
 @section('page-style')
+
 {{-- Page Css files --}}
 <link rel="stylesheet" href="{{ asset(mix('assets/vendor/css/pages/page-auth.css')) }}">
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+   <link rel="stylesheet" href=" {{ asset('assets/css/estilos.css') }}">
+
 @endsection
 
 @section('content')
+
+
 <div class="authentication-wrapper authentication-cover">
   <div class="authentication-inner row m-0">
     <!-- /Left Text -->
@@ -20,10 +28,10 @@ $customizerHidden = 'customizer-hide';
       <div class="flex-row text-center mx-auto">
         {{-- <img src="{{asset('assets/img/pages/login-'.$configData['style'].'.png')}}" alt="Auth Cover Bg color" width="520" class="img-fluid authentication-cover-img" data-app-light-img="pages/login-light.png" data-app-dark-img="pages/login-dark.png"> --}}
         <div class="mx-auto">
-          <h3>Colocar imagen o logo 🥳</h3>
-          <p>
-            La aplicacion perfecta para amantes del fútbol chileno <br> .
-          </p>
+          <h3>¡KAMIVAN, La aplicacion WEB para amantes del fútbo chileno!</h3>
+        
+
+
         </div>
       </div>
     </div>
@@ -41,7 +49,11 @@ $customizerHidden = 'customizer-hide';
         </div>
         <!-- /Logo -->
         <h4 class="mb-2">Bienvenido 👋</h4>
+        <p class="mb-4">ultima actualización de información: </p>
         <p class="mb-4">Inicia sesión en tu cuenta y comienza la aventura.</p>
+     
+    
+
 
         @if (session('status'))
         <div class="alert alert-success mb-1 rounded-0" role="alert">

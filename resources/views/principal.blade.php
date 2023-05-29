@@ -15,7 +15,7 @@ $configData = Helper::appClasses();
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Posición</th>
+                <th>N°</th>
                 <th>Club</th>
                 <th>Escudo</th>
                 <th>Puntos</th>

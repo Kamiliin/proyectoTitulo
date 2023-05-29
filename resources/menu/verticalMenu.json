@@ -7,20 +7,34 @@
       "slug": "pages-Home"
     },
     {
-      "url": "/teams",
-      "name": "Equipos",
+      "url": "/encuentros",
+      "name": "Próximos Partidos",
       "icon": "menu-icon tf-icons bx bxs-trophy",
       "slug": "pages-teams"
     },
+
     {
-      "url": "/players",
+      "url": "/principal",
+      "name": "Tabla de Posiciones",
+      "icon": "menu-icon tf-icons bx bxs-medal",
+      "slug": "pages-teams"
+    },
+    {
+      "url": "/jugadores",
       "name": "Jugadores",
       "icon": "menu-icon tf-icons bx bx-football",
       "slug": "pages-players"
     },
+
     {
-      "url": "/types",
-      "name": "tipos",
+      "url": "/entrenadores",
+      "name": "Entrenadores",
+      "icon": "menu-icon tf-icons bx bxs-user-voice",
+      "slug": "pages-players"
+    },
+    {
+      "url": "/estadios",
+      "name": "Estadios",
       "icon": "menu-icon tf-icons bx bx-home-circle",
       "slug": "pages-types"
     },
@@ -41,6 +55,13 @@
       "name": "Usuarios",
       "icon": "menu-icon tf-icons bx bxs-group",
       "slug": "pages-users"
+    },
+    {
+      "url": "/actualizar",
+      "name": "Actualizar",
+      "icon": "menu-icon tf-icons bx bx-transfer-alt",
+      "slug": "pages-users"
     }
+
   ]
 }

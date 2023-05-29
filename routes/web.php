@@ -20,6 +20,11 @@ $controller_path = 'App\Http\Controllers';
 
 // pages
 
+//por rutas no existentes
+
+Route::fallback(function () {
+    return redirect('/');
+});
 
 Route::middleware([
     'auth:sanctum',
@@ -45,11 +50,10 @@ $controller_path = 'App\Http\Controllers';
     //API 
 
 
-
     Route::get('/encuentros', [FootballController::class, 'getUpcomingMatches'])->name('encuentros');
     Route::get('/principal', [FootballController::class, 'getChileanClubs'])->name('principal');
     Route::get('/actualizar', [FootballController::class, 'updateDataFromAPI']);
-
-
+    Route::get('/estadios', [FootballController::class, 'getStadium'])->name('estadios');
+    Route::get('/jugadores', [FootballController::class, 'getPlayer'])->name('jugadores');
 
 });
