@@ -165,9 +165,12 @@ class FootballController extends Controller
     {
         $data = Club::orderBy('rank')->get();
 
-        return view('principal', ['clubs' => $data]);
+        return view('position', ['clubs' => $data]);
 
     }
+
+
+
 
 
     public function getUpcomingMatches()
@@ -181,7 +184,7 @@ class FootballController extends Controller
     {
         $stadiums = Stadium::orderBy('name_club', 'asc')->get();
     
-        return view('estadios', ['stadiums' => $stadiums]);
+        return view('stadia', ['stadiums' => $stadiums]);
     }
     
 
@@ -189,7 +192,7 @@ class FootballController extends Controller
     {
         $players = Player::orderBy('player_nameclub', 'asc')->get();
     
-        return view('jugadores', ['players' => $players]);
+        return view('players', ['players' => $players]);
     }
 
 

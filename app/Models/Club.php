@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Club extends Model
 {
-    protected $fillable = ['api_id', 'name', 'logo', 'rank', 'points', 'goals_diff', 'played', 'win', 'draw', 'lose'];
+    protected $fillable = ['api_id', 'name', 'logo', 'rank', 'points', 'goals_diff', 'played', 'win', 'draw', 'lose','updated_at'];
 
 }
 

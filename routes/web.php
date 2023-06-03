@@ -50,10 +50,10 @@ $controller_path = 'App\Http\Controllers';
     //API 
 
 
-    Route::get('/encuentros', [FootballController::class, 'getUpcomingMatches'])->name('encuentros');
-    Route::get('/principal', [FootballController::class, 'getChileanClubs'])->name('principal');
+    Route::get('/matches', [FootballController::class, 'getUpcomingMatches'])->name('matches');
+    Route::get('/position', [FootballController::class, 'getChileanClubs'])->name('position');
     Route::get('/actualizar', [FootballController::class, 'updateDataFromAPI']);
-    Route::get('/estadios', [FootballController::class, 'getStadium'])->name('estadios');
-    Route::get('/jugadores', [FootballController::class, 'getPlayer'])->name('jugadores');
+    Route::get('/stadia', [FootballController::class, 'getStadium'])->name('stadia');
+    Route::get('/players', [FootballController::class, 'getPlayer'])->name('players');
 
 });

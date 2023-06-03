@@ -7,33 +7,28 @@
       "slug": "pages-Home"
     },
     {
-      "url": "/encuentros",
+      "url": "/matches",
       "name": "Próximos Partidos",
       "icon": "menu-icon tf-icons bx bxs-trophy",
       "slug": "pages-teams"
     },
 
     {
-      "url": "/principal",
+      "url": "/position",
       "name": "Tabla de Posiciones",
       "icon": "menu-icon tf-icons bx bxs-medal",
       "slug": "pages-teams"
     },
     {
-      "url": "/jugadores",
+      "url": "/players",
       "name": "Jugadores",
       "icon": "menu-icon tf-icons bx bx-football",
       "slug": "pages-players"
     },
 
+    
     {
-      "url": "/entrenadores",
-      "name": "Entrenadores",
-      "icon": "menu-icon tf-icons bx bxs-user-voice",
-      "slug": "pages-players"
-    },
-    {
-      "url": "/estadios",
+      "url": "/stadia",
       "name": "Estadios",
       "icon": "menu-icon tf-icons bx bx-home-circle",
       "slug": "pages-types"

@@ -1,6 +1,10 @@
 @php
+
+use Carbon\Carbon;
+use App\Models\Club;
 $configData = Helper::appClasses();
 $customizerHidden = 'customizer-hide';
+
 @endphp
 
 @extends('layouts/blankLayout')
@@ -29,9 +33,10 @@ $customizerHidden = 'customizer-hide';
         {{-- <img src="{{asset('assets/img/pages/login-'.$configData['style'].'.png')}}" alt="Auth Cover Bg color" width="520" class="img-fluid authentication-cover-img" data-app-light-img="pages/login-light.png" data-app-dark-img="pages/login-dark.png"> --}}
         <div class="mx-auto">
           <h3>¡KAMIVAN, La aplicacion WEB para amantes del fútbo chileno!</h3>
-        
 
 
+
+          
         </div>
       </div>
     </div>
@@ -49,7 +54,7 @@ $customizerHidden = 'customizer-hide';
         </div>
         <!-- /Logo -->
         <h4 class="mb-2">Bienvenido 👋</h4>
-        <p class="mb-4">ultima actualización de información: </p>
+   
         <p class="mb-4">Inicia sesión en tu cuenta y comienza la aventura.</p>
      
     

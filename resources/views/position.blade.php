@@ -29,6 +29,7 @@ $configData = Helper::appClasses();
         <tbody>
             @foreach($clubs as $club)
                 <tr>
+                    
                     <td>{{ $club->rank }}</td>
                     <td>{{ $club->name }}</td>
                     <td><img src="{{ $club->logo }}" alt="Logo" width="50" height="50"></td>
@@ -38,6 +39,7 @@ $configData = Helper::appClasses();
                     <td>{{ $club->win }}</td>
                     <td>{{ $club->draw }}</td>
                     <td>{{ $club->lose }}</td>
+
                 </tr>
             @endforeach
         </tbody>
