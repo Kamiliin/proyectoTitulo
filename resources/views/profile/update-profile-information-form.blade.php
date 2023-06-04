@@ -59,6 +59,20 @@
         wire:model.defer="state.email" />
       <x-jet-input-error for="email" />
     </div>
+
+  <div class="mb-3">
+    <x-jet-label class="form-label" for="club" value="{{ __('Club') }}" />
+    <div class="position-relative">
+      <select id="club" class="form-select {{ $errors->has('club') ? 'is-invalid' : '' }}" wire:model.defer="state.club">
+        <option value="">Selecciona un club Favorito</option>
+        @foreach ($clubs as $club)
+          <option value="{{ $club->id }}">{{ $club->name }}</option>
+        @endforeach
+      </select>
+      <x-jet-input-error for="club" class="invalid-feedback" />
+    </div>
+  </div>
+
   </x-slot>
 
   <x-slot name="actions">

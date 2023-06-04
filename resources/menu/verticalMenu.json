@@ -49,13 +49,20 @@
       "url": "/users",
       "name": "Usuarios",
       "icon": "menu-icon tf-icons bx bxs-group",
-      "slug": "pages-users"
+      "slug": "pages"
     },
+    {
+      "url": "/comentario",
+      "name": "comentarios",
+      "icon": "menu-icon tf-icons bx bxs-group",
+      "slug": "pages"
+    },
+
     {
       "url": "/actualizar",
       "name": "Actualizar",
       "icon": "menu-icon tf-icons bx bx-transfer-alt",
-      "slug": "pages-users"
+      "slug": "pages-update"
     }
 
   ]

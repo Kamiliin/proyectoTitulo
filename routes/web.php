@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FootballController;
+use App\Http\Controllers\ComentarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,4 +57,10 @@ $controller_path = 'App\Http\Controllers';
     Route::get('/stadia', [FootballController::class, 'getStadium'])->name('stadia');
     Route::get('/players', [FootballController::class, 'getPlayer'])->name('players');
 
+
+
+    //comentario
+    Route::get('/comentario', [App\Http\Controllers\HomeController::class, 'index'])->name('comentario');
+    Route::resource('comentario', ComentarioController::class);
+    
 });
