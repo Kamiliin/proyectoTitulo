@@ -36,15 +36,19 @@
                         <td>
                             @if($comentario->user_id == Auth::id())
                                 <!-- Mostrar botones de edición y eliminación -->
-                                <button type="button" class="btn btn-success" data-toggle="modal"
+
+                                <div class="col">
+                                <button type="button" class="btn btn-success col-12" data-toggle="modal"
                                     data-target="#edit{{$comentario->id}}">
                                     Editar
                                 </button>
 
-                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                <button type="button" class="btn btn-danger col-12" data-toggle="modal"
                                     data-target="#delete{{$comentario->id}}">
                                     Eliminar
                                 </button>
+
+                                </div>
                             @else
                                 <!-- Mostrar mensaje indicando que el comentario es de otro usuario -->
                                 <span>Este comentario pertenece a otro usuario</span>

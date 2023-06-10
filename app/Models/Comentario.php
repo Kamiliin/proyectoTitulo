@@ -13,4 +13,10 @@ class Comentario extends Model
     protected $fillable= ['nombre', 'descripcion', 'mejora'];
     protected $guarded=[];
     public $timestamps = false;
+
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

@@ -8,12 +8,12 @@ class CreateComentarioTable extends Migration
 {
     public function up()
     {
-        Schema::create('comentarios', function (Blueprint $table) {
+        Schema::create('comentario', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
             $table->text('descripcion');
             $table->text('mejora')->nullable();
-            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
@@ -21,6 +21,6 @@ class CreateComentarioTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('comentarios');
+        Schema::dropIfExists('comentario');
     }
 }
